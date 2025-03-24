@@ -135,7 +135,7 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>couchbase<
  &lt;td>no_ssl_verify&lt;/td>
  &lt;td style="text-align: center">boolean&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
- &lt;td>If true, skip server certificate verification.&lt;/td>
+ &lt;td>If true, skip server certificate verification. &lt;strong>Warning:&lt;/strong> This option should only be used in development or testing environments. Disabling SSL verification poses significant security risks in production as it makes your connection vulnerable to man-in-the-middle attacks.&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>profile&lt;/td>

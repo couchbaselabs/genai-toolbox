@@ -135,7 +135,7 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>couchbase<
  &lt;td>no_ssl_verify&lt;/td>
  &lt;td style="text-align: center">boolean&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
- &lt;td>If true, skip server certificate verification.&lt;/td>
+ &lt;td>If true, skip server certificate verification. &lt;strong>Warning:&lt;/strong> This option should only be used in development or testing environments. Disabling SSL verification poses significant security risks in production as it makes your connection vulnerable to man-in-the-middle attacks.&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>profile&lt;/td>
@@ -185,8 +185,8 @@ parameters will be used according to their name: e.g. &lt;code>$id&lt;/code>.&lt
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#ae81ff">string&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">description&lt;/span>: &lt;span style="color:#ae81ff">Product category name&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">max_price&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#ae81ff">number&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">description&lt;/span>: &lt;span style="color:#ae81ff">Maximum price (positive number)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#ae81ff">integer&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">description&lt;/span>: &lt;span style="color:#ae81ff">Maximum price (positive integer)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="reference">Reference&lt;a class="td-heading-self-link" href="#reference" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;table>
  &lt;thead>
