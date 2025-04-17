@@ -68,7 +68,7 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>Connect vi
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">sources&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">my-couchbase-instance&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">kind&lt;/span>: &lt;span style="color:#ae81ff">couchbase&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">connection_string&lt;/span>: &lt;span style="color:#ae81ff">couchbase://localhost:8091&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">connectionString&lt;/span>: &lt;span style="color:#ae81ff">couchbase://localhost:8091&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">bucket&lt;/span>: &lt;span style="color:#ae81ff">travel-sample&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">scope&lt;/span>: &lt;span style="color:#ae81ff">inventory&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">username&lt;/span>: &lt;span style="color:#ae81ff">Administrator&lt;/span>
@@ -91,7 +91,7 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>Connect vi
  &lt;td>Must be &amp;ldquo;couchbase&amp;rdquo;.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>connection_string&lt;/td>
+ &lt;td>connectionString&lt;/td>
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">true&lt;/td>
  &lt;td>Connection string for the Couchbase cluster.&lt;/td>
@@ -163,10 +163,7 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>Connect vi
  &lt;td>Name of the connection profile to apply.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table>
-&lt;h2 id="tools">Tools&lt;a class="td-heading-self-link" href="#tools" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="couchbase-sql">Couchbase SQL&lt;a class="td-heading-self-link" href="#couchbase-sql" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>This source can be used with the &amp;ldquo;couchbase-sql&amp;rdquo; tool to execute SQL++ queries against your Couchbase database.&lt;/p></description></item><item><title>couchbase-sql</title><link>https://couchbaselabs.github.io/genai-toolbox/resources/tools/couchbase-sql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://couchbaselabs.github.io/genai-toolbox/resources/tools/couchbase-sql/</guid><description>&lt;h2 id="about">About&lt;a class="td-heading-self-link" href="#about" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/table></description></item><item><title>couchbase-sql</title><link>https://couchbaselabs.github.io/genai-toolbox/resources/tools/couchbase-sql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://couchbaselabs.github.io/genai-toolbox/resources/tools/couchbase-sql/</guid><description>&lt;h2 id="about">About&lt;a class="td-heading-self-link" href="#about" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>A &lt;code>couchbase-sql&lt;/code> tool executes a pre-defined SQL statement against a Couchbase
 database. It&amp;rsquo;s compatible with any of the following sources:&lt;/p>
 &lt;ul>
