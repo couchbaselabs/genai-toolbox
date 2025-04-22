@@ -109,37 +109,37 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>couchbase<
  &lt;td>Password for authentication.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>client_cert&lt;/td>
+ &lt;td>clientCert&lt;/td>
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>Path to client certificate file for TLS authentication.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>client_cert_password&lt;/td>
+ &lt;td>clientCertPassword&lt;/td>
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>Password for the client certificate.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>client_key&lt;/td>
+ &lt;td>clientKey&lt;/td>
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>Path to client key file for TLS authentication.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>client_key_password&lt;/td>
+ &lt;td>clientKeyPassword&lt;/td>
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>Password for the client key.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>ca_cert&lt;/td>
+ &lt;td>caCert&lt;/td>
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>Path to CA certificate file.&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>no_ssl_verify&lt;/td>
+ &lt;td>noSslVerify&lt;/td>
  &lt;td style="text-align: center">boolean&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>If true, skip server certificate verification. &lt;strong>Warning:&lt;/strong> This option should only be used in development or testing environments. Disabling SSL verification poses significant security risks in production as it makes your connection vulnerable to man-in-the-middle attacks.&lt;/td>
@@ -149,6 +149,12 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>couchbase<
  &lt;td style="text-align: center">string&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
  &lt;td>Name of the connection profile to apply.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>queryScanConsistency&lt;/td>
+ &lt;td style="text-align: center">integer&lt;/td>
+ &lt;td style="text-align: center">false&lt;/td>
+ &lt;td>Query scan consistency. Controls the consistency guarantee for index scanning. Values: 1 for &amp;ldquo;not_bounded&amp;rdquo; (fastest option, but results may not include the most recent operations), 2 for &amp;ldquo;request_plus&amp;rdquo; (highest consistency level, includes all operations up until the query started, but incurs a performance penalty). If not specified, uses the server&amp;rsquo;s default setting.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>Dgraph</title><link>https://couchbaselabs.github.io/genai-toolbox/resources/sources/dgraph/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://couchbaselabs.github.io/genai-toolbox/resources/sources/dgraph/</guid><description>&lt;h2 id="about">About&lt;a class="td-heading-self-link" href="#about" aria-label="Heading self-link">&lt;/a>&lt;/h2>
