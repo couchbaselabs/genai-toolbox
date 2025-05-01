@@ -162,7 +162,7 @@ your connection to Cloud SQL.&lt;/p></description></item><item><title>couchbase<
  &lt;td>queryScanConsistency&lt;/td>
  &lt;td style="text-align: center">integer&lt;/td>
  &lt;td style="text-align: center">false&lt;/td>
- &lt;td>Query scan consistency. Controls the consistency guarantee for index scanning. Values: 1 for &amp;ldquo;not_bounded&amp;rdquo; (fastest option, but results may not include the most recent operations), 2 for &amp;ldquo;request_plus&amp;rdquo; (highest consistency level, includes all operations up until the query started, but incurs a performance penalty). If not specified, defaults to &amp;ldquo;request_plus&amp;rdquo;&lt;/td>
+ &lt;td>Query scan consistency. Controls the consistency guarantee for index scanning. Values: 1 for &amp;ldquo;not_bounded&amp;rdquo; (fastest option, but results may not include the most recent operations), 2 for &amp;ldquo;request_plus&amp;rdquo; (highest consistency level, includes all operations up until the query started, but incurs a performance penalty). If not specified, defaults to the Couchbase Go SDK default.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>Dgraph</title><link>https://couchbaselabs.github.io/genai-toolbox/resources/sources/dgraph/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://couchbaselabs.github.io/genai-toolbox/resources/sources/dgraph/</guid><description>&lt;h2 id="about">About&lt;a class="td-heading-self-link" href="#about" aria-label="Heading self-link">&lt;/a>&lt;/h2>
